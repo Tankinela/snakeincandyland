@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Úvodní obrazovka -->
+    <div id="introScreen" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; background-color: #ffe4e1;">
+        <h1 style="color: #ff69b4; font-family: 'Press Start 2P', sans-serif; font-size: 32px;">SNAKE IN CANDYLAND</h1>
+        <button id="playIntro" style="background-color: #ff69b4; color: white; padding: 15px 30px; font-size: 16px; border: none; cursor: pointer; margin-top: 20px; font-family: 'Press Start 2P', sans-serif; border-radius: 5px;">PLAY</button>
+    </div>
+
+    <!-- Hlavní menu -->
+    <div id="menu" style="display: none;">
+        <h1>SNAKE IN CANDYLAND</h1>
+        <button id="start">START</button>
+        <button id="difficultyButton">DIFFICULTY</button>
+        <button id="skins">SKINS (Coming Soon)</button>
+        <button id="music">MUSIC ON</button>
+        <button id="creator">CREATOR</button>
+    </div>
+
+    <!-- Animované ovoce -->
+    <div id="fruitsContainerTop"></div>
+    <div id="fruitsContainerBottom"></div>
+
+    <!-- Herní plátno -->
+    <canvas id="gameCanvas" width="400" height="400" style="display: none;"></canvas>
+    <div id="game-over" style="display: none;position: absolute;z-index: 1000;font-size: xx-large;top: 400px;color: red;">GAME OVER</div>
+    <button id="startOver" style="display: none;">START OVER</button>
+    <button id="menuButton" style="display: none;">MENU</button>
+
+    <!-- Menu pro výběr obtížností -->
+    <div id="difficultyMenu" style="display: none;">
+        <h2>SELECT DIFFICULTY</h2>
+        <button data-difficulty="easy" class="difficulty-option">EASY</button>
+        <button data-difficulty="medium" class="difficulty-option">MEDIUM</button>
+        <button data-difficulty="hard" class="difficulty-option">HARD</button>
+        <button data-difficulty="expert" class="difficulty-option">EXPERT</button>
+        <button id="backToMenu">BACK</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
