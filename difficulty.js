@@ -19,9 +19,7 @@ document.getElementById('creator').addEventListener('click', () => {
     alert('Eliška Legerská');
 });
 
-document.getElementById('skins').addEventListener('click', () => {
-    alert('Skins will be added in the future');
-});
+
 
 const box = 20;
 const headSize = 44;
@@ -245,3 +243,10 @@ difficultyOptions.forEach(option => {
         alert(`Selected Difficulty: ${selectedDifficulty.toUpperCase()}`);
     });
 });
+
+
+
+
+
+
+
