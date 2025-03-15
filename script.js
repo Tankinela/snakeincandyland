@@ -9,6 +9,7 @@ const menuButton = document.getElementById('menuButton');
 const startButton = document.getElementById('start');
 
 
+
 // Elementy pro úvodní obrazovku, hlavní menu a herní hudbu
 const introScreen = document.getElementById('introScreen');
 const playIntroButton = document.getElementById('playIntro');
@@ -104,9 +105,7 @@ document.getElementById('creator').addEventListener('click', () => {
     alert('Eliška Legerská');
 });
 
-document.getElementById('skins').addEventListener('click', () => {
-    alert('Skins will be added in the future');
-});
+
 
 
 // Nastavení hry
