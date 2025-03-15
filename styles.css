@@ -1,0 +1,205 @@
+/* Globální nastavení pro stránku */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe4e1; /* Pastel pink background */
+    margin: 0;
+    flex-direction: column;
+    font-family: 'Press Start 2P', sans-serif; /* Pixelový font */
+}
+
+/* Herní pole */
+canvas {
+    background-color: #fff0f5; /* Light pastel pink */
+    border: 2px solid #ffb6c1; /* Light pink border */
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Obecné nastavení tlačítek */
+button {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Větší tlačítka */
+    margin: 10px;
+    font-size: 16px; /* Pixelový vzhled */
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', sans-serif; /* Pixelový font */
+    text-transform: uppercase; /* Velká písmena */
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Plynulé efekty */
+}
+
+/* Hover efekt pro tlačítka */
+button:hover {
+    background-color: #ff1493; /* Tmavší růžová */
+    transform: scale(1.05); /* Mírné zvětšení */
+}
+
+/* Styl hlavního menu */
+#menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Mezera mezi tlačítky */
+    z-index: 6;
+}
+
+/* Styl nadpisu */
+h1 {
+    color: #ff69b4; /* Hot pink */
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px #ff1493; /* Pixelovaný stín */
+    font-family: 'Press Start 2P', sans-serif; /* Pixelový font */
+}
+/* Styl menu obtížnosti */
+#difficultyMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Mezera mezi tlačítky */
+    z-index: 6;
+    background-color: #fff0f5; /* Light pastel pink */
+    padding: 20px;
+    border: 2px solid #ffb6c1; /* Light pink border */
+    border-radius: 10px;
+}
+
+/* Styl menu obtížností */
+#difficultyMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 6;
+    background-color: #fff0f5; /* Light pastel pink */
+    padding: 20px;
+    border: 2px solid #ffb6c1; /* Light pink border */
+    border-radius: 10px;
+}
+
+#difficultyMenu button {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px; /* Pixelový vzhled */
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Press Start 2P', sans-serif;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#difficultyMenu button:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/* Kontejner pro ovoce nahoře */
+#fruitsContainerTop {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Kontejner pro ovoce dole */
+#fruitsContainerBottom {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Styl pro ovoce */
+.fruit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Animace ovoce nahoře */
+@keyframes moveFruitTop {
+    0% {
+        left: -50px;
+    }
+    100% {
+        left: 100vw;
+    }
+}
+
+/* Animace ovoce dole (opačný směr) */
+@keyframes moveFruitBottom {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: -50px;
+    }
+}
+
+#backToMenuFromAbout {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Press Start 2P', sans-serif;
+    border-radius: 5px;
+    position: absolute; /* Fixace tlačítka */
+    top: 60%;           /* Posunutí tlačítka o něco dolů (zvýšení hodnoty z 50% na 60%) */
+    left: 50%;          /* Umístění ve středu horizontálně */
+    transform: translate(-50%, -50%); /* Vycentrování do středu */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
