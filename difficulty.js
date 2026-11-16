@@ -16,7 +16,7 @@ backgroundMusic.loop = true; // Hudba se bude opakovat
 
 // Zajištění popup zpráv
 document.getElementById('creator').addEventListener('click', () => {
-    alert('Eliška Legerská');
+    alert('Tankinela');
 });
 
 
